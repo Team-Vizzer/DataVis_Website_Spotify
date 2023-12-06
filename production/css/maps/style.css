@@ -11,6 +11,11 @@ body {
     margin-bottom: 40px;
     color: blueviolet;
 } */
+h2 {
+    text-align: center;
+    margin-bottom: 40px;
+    color: gray;
+}
 
 
 
@@ -85,6 +90,10 @@ body {
     float: left;
     margin-left: 60px;
 } */
+.right_col {
+    min-height: 100%;
+  }
+
 
 #showAllGenresButton {
     background-color: #f8f8f8;
@@ -92,7 +101,7 @@ body {
     padding: 5px 10px;
     cursor: pointer;
     margin: 10px;
-    background-image: url('../images/spotify_icon1.png');
+    background-image: url('../../../images/spotify_icon1.png');
     /* Replace with your icon path */
     background-repeat: no-repeat;
     background-position: 5px center;
@@ -126,7 +135,7 @@ body {
     /* appearance: none; */
     width: 25px;
     height: 25px;
-    background-image: url('../images/icon_spotify_green.png');
+    background-image: url('../../images/icon_spotify_green.png');
     background-repeat: no-repeat;
     background-position: center;
     background-size: contain;
@@ -140,13 +149,13 @@ body {
 
 .year-slider::-webkit-slider-thumb:active {
     /* When the thumb is being dragged */
-    background-image: url('../images/icon_spotify_dark.png');
+    background-image: url('../../images/icon_spotify_dark.png');
     opacity: 0.8;
     /* 50% transparent */
 }
 
 .year-slider::-webkit-slider-thumb:hover {
-    background-image: url('../images/icon_spotify_dark.png');
+    background-image: url('../../images/icon_spotify_dark.png');
     opacity: 0.8;
     /* 50% transparent */
 }
@@ -154,7 +163,7 @@ body {
 .year-slider::-moz-range-thumb {
     width: 25px;
     height: 25px;
-    background-image: urlurl('../images/icon_spotify_green.png');
+    background-image: url('../../images/icon_spotify_green.png');
     background-repeat: no-repeat;
     background-position: center;
     background-size: contain;
@@ -172,7 +181,7 @@ body {
 }
 
 .year-slider::-webkit-slider-thumb:hover {
-    background-image: url('../images/icon_spotify_dark.png');
+    background-image: url('../../images/icon_spotify_dark.png');
     opacity: 0.8;
     /* 50% transparent */
 }
@@ -252,6 +261,41 @@ body {
     background: url('contrasticon.png');
     cursor: pointer;
 } */
+
+/*legend*/
+.title_left h3 {
+    display: flex;
+    align-items: center;
+  }
+  
+  .genre-legend {
+    display: flex;
+    margin-left: 20px; /* Adjust as needed */
+  }
+
+.genre-legend {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 10px;
+  }
+  
+  .legend-item {
+    display: flex;
+    align-items: center;
+    margin-right: 10px; /* Space between legend items */
+  }
+  
+  .color-box {
+    width: 20px; /* Width of each color box */
+    height: 20px; /* Height of each color box */
+  }
+  
+  .genre-label {
+    font-size: 14px;
+    margin-left: 5px; /* Space between color box and label */
+  }
+
 #tsne {
     background-color: white;
 }

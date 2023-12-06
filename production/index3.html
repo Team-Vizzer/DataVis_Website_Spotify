@@ -40,9 +40,11 @@
 
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://d3js.org/d3.v5.min.js"></script>
   <script src="https://d3js.org/d3.v7.min.js"></script>
+  <script src="https://d3js.org/d3.v3.min.js"></script>
   <script src="https://d3js.org/topojson.v3.min.js"></script>
-  <link rel="stylesheet" href="../src/js/styles.css">
+  <link rel="stylesheet" href="style.css">
 </head>
 
 <body class="nav-md">
@@ -111,7 +113,9 @@
                     <div class="clearfix"></div>
                   </div>
                   <div class="x_content">
-                    <svg id="bubble" width="990" height="200"></svg>
+                    <div id="bubble-container">
+                      <svg id="bubble"></svg>
+                    </div>
                   </div>
                 </div>
               </div>
@@ -122,9 +126,14 @@
                     <div class="clearfix"></div>
                   </div>
                   <div class="x_content">
-                    <!-- <svg id="parallel" width="700" height="300"></svg> -->
-                    <svg id="worldMap" width="990" height="500"></svg>
-                    <svg id="colorKey" width="300" height="50"></svg>
+                    <!-- <svg id="worldMap" width="990" height="500"></svg>
+                    <svg id="colorKey" width="300" height="50"></svg> -->
+                    <div id="worldMap-container">
+                      <svg id="worldMap"></svg>
+                    </div>
+                    <div id="colorKey-container">
+                      <svg id="colorKey"></svg>
+                    </div>
                   </div>
                 </div>
               </div>
@@ -138,8 +147,12 @@
                   <div class="clearfix"></div>
                 </div>
                 <div class="x_content">
-                  <svg id='radarChart' width="500" height="400"></svg>
-                  <svg id='ridgeChart' width="500" height="400"></svg>
+                  <div id="radar-container">
+                    <svg id="radarChart"></svg>
+                  </div>
+                  <div id = "ridge-container">
+                    <svg id="ridgeChart"></svg>
+                  </div>
                 </div>
               </div>
             </div>
@@ -223,7 +236,8 @@
     <script src="../src/js/worldMap.js"></script>
     <script src="../src/js/bubble.js"></script>
     <script src="../src/js/radar.js"></script>
-    <script src="../src/js/parallel.js"></script>
+    <!-- <script src="../src/js/parallel.js"></script> -->
+    <script src="../src/js/navToggle.js"></script>
 
 
     <!-- <script src="../src/js/pie.js"></script> -->

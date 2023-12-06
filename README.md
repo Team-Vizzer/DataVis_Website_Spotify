@@ -1,7 +1,7 @@
 # DataVis_Website_Spotify_Group7
 Welcome to the Spotify Music Trend Visualization project by Group 7. This interactive website is designed to showcase the latest trends in the world of music, as captured by Spotify's rich datasets.
 
-#Getting Started
+# Getting Started
 To explore our visualizations, you have a couple of options:
 
 Local Setup

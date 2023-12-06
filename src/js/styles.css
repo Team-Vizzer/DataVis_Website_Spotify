@@ -77,6 +77,10 @@ h2 {
     background-image: url('images/sound.png');
 }
 
+.right_col {
+    min-height: 100%;
+  }
+
 #radarChart {
     float: left;
     margin-left: 60px;
@@ -93,6 +97,7 @@ h2 {
     background-position: 5px center;
     padding-left: 30px; /* Adjust based on your icon size */
 }
+
 
 
 

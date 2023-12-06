@@ -5,9 +5,9 @@ var margin_area = {top: 20, right: 40, bottom: 0, left: 30};
     // width_area = 900 - margin_area.left - margin_area.right,
     // height_area = 350 - margin_area.top - margin_area.bottom;
 
-var areaContainer = document.getElementById("area-container");
-var width_area = areaContainer.clientWidth - margin_area.left - margin_area.right;
-var height_area = areaContainer.clientHeight - margin_area.top - margin_area.bottom;
+    areaContainer = document.getElementById("area-container"),
+    width_area = areaContainer.offsetWidth - margin_area.left - margin_area.right,
+    height_area = areaContainer.offsetHeight - margin_area.top - margin_area.bottom;
 
 console.log("area info", areaContainer ,width_area, height_area);
 // var containerWidth = document.getElementById("area").offsetWidth;
@@ -19,8 +19,8 @@ console.log("area info", areaContainer ,width_area, height_area);
 // append the svg object to the body of the page
 var svgArea = d3.select("#area")
   .append("svg")
-    .attr("width", width_area)
-    .attr("height", height_area)
+    .attr("width", width_area+ margin_area.left + margin_area.right)
+    .attr("height", height_area+ margin_area.top + margin_area.bottom)
   .append("g")
     .attr("transform",
           "translate(" + margin_area.left + "," + margin_area.top + ")");
@@ -33,22 +33,41 @@ d3.csv("2.csv").then(function(data) {
   const keys = data.columns.slice(1)
 
   // Add X axis
+  // var x = d3.scaleLinear()
+  //   .domain(d3.extent(data, function(d) { return d.year; }))
+  //   .range([ 0, width_area ]);
+  // svgArea.append("g")
+  //   .attr("transform", "translate(0," + height_area*0.8 + ")")
+  //   .call(d3.axisBottom(x).tickSize(-height_area*.7).tickValues([2000,2002,2004, 2006,2008, 2010,2012,2014,2016, 2018, 2020,2022]))
+  //   .select(".domain").remove()
+  // // Customization
+  // svgArea.selectAll(".tick line").attr("stroke", "#dedede")
+
+  // // Add X axis label:
+  // svgArea.append("text")
+  //     .attr("text-anchor", "end")
+  //     .attr("x", width_area)
+  //     .attr("y", height_area-30 )
+  //     .text("Time (year)");
+
   var x = d3.scaleLinear()
-    .domain(d3.extent(data, function(d) { return d.year; }))
-    .range([ 0, width_area ]);
+  .domain(d3.extent(data, function(d) { return d.year; }))
+  .range([ 0, width_area ]);
   svgArea.append("g")
-    .attr("transform", "translate(0," + height_area*0.8 + ")")
-    .call(d3.axisBottom(x).tickSize(-height_area*.7).tickValues([2000,2002,2004, 2006,2008, 2010,2012,2014,2016, 2018, 2020,2022]))
-    .select(".domain").remove()
+  .attr("transform", "translate(0," + height_area*0.8 + ")")
+  .call(d3.axisBottom(x).tickSize(-height_area*.7).tickValues(d3.range(2000, 2023, 2)).tickFormat(d3.format("d")))
+  .select(".domain").remove();
+
   // Customization
   svgArea.selectAll(".tick line").attr("stroke", "#dedede")
+  svgArea.selectAll(".tick text").attr("dy", "1em");
 
   // Add X axis label:
   svgArea.append("text")
-      .attr("text-anchor", "end")
-      .attr("x", width_area)
-      .attr("y", height_area-30 )
-      .text("Time (year)");
+  .attr("text-anchor", "end")
+  .attr("x", width_area)
+  .attr("y", height_area-30 )
+  .text("Time (year)");
 
   // Add Y axis
   var y = d3.scaleLinear()

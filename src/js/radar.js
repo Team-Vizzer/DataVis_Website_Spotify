@@ -1,7 +1,10 @@
 // Constants and initializations for Radar Chart
 const radarPath = 'dataset.csv'; // Adjust the path to your dataset
-const radarWidth = 400;
-const radarHeight = 400;
+// const radarWidth = 400;
+// const radarHeight = 400;
+var radarContainer = document.getElementById("radar-container");
+var radarWidth = radarContainer.offsetWidth - 60;
+var radarHeight = radarContainer.offsetHeight;
 const radarRadius = Math.min(radarWidth, radarHeight) / 2 - 20;
 const radarSvg = d3.select("#radarChart");
 const radarDimensions = ['danceability', 'liveness_norm', 'tempo_norm', 'energy', 'valence', 'loudness_norm', 'speechiness_norm', 'acousticness_norm'];

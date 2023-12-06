@@ -7,6 +7,7 @@ padding=20
 const bubbleHeight = 200
 const bubbleWidth = 990
 
+
 function generateBubble(genre) {
   d3.csv("dataset.csv").then(function(dataset) {
     genre_data = dataset.filter((obj) => obj.new_genre===genre)

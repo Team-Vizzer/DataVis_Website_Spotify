@@ -1,7 +1,10 @@
 // Set the dimensions and margins of the graph
 var margin = {top: 130, right: 50, bottom: 30, left: 120}, // Increased top margin
-    width_ridge = 480 - margin.left - margin.right,
-    height_ridge = 400 - margin.top - margin.bottom;
+    // width_ridge = 480 - margin.left - margin.right,
+    // height_ridge = 400 - margin.top - margin.bottom;
+    ridgeContainer = document.getElementById("ridge-container");
+    width_ridge = ridgeContainer.offsetWidth - margin.left - margin.right;
+    height_ridge = ridgeContainer.offsetHeight- margin.top - margin.bottom;
 
 // Append the svg object to the body of the page
 var svg = d3.select("#ridgeChart")

@@ -1,12 +1,18 @@
     // set the dimensions and margin_ts of the graph
-    const margin_t = {top: 15, right: 20, bottom: 25, left: 70},
-        width_t = 550 - margin_t.left - margin_t.right,
-        height_t = 350 - margin_t.top - margin_t.bottom;
+    // const margin_t = {top: 15, right: 20, bottom: 25, left: 70},
+    //     width_t = 550 - margin_t.left - margin_t.right,
+    //     height_t = 350 - margin_t.top - margin_t.bottom;
         // width_t = 500,
         // height_t =300;
     
     // append the svg object to the body of the page
     
+    var margin_t = {top: 15, right: 20, bottom: 25, left: 70},
+        tsneContainer = document.getElementById("tsne-container"),
+        width_t = tsneContainer.offsetWidth - margin_t.left - margin_t.right,
+        height_t = tsneContainer.offsetHeight - margin_t.top - margin_t.bottom;
+
+
     const svgT = d3.select("#tsne")
       .append("svg")
         .attr("width", width_t + margin_t.left + margin_t.right)

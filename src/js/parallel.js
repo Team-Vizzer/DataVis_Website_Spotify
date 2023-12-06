@@ -1,12 +1,16 @@
 
 function createParallelCoordinatesChart(dataset) {
   // const para_width = 850;
-  const para_width = 1510;
-  const para_height = 400;
+  // const para_width = 1510;
+  // const para_height = 400;
   const svgPara = d3.select('#parallel');
 
   
-  const margin = { left: 90, top: 30, right: 30, bottom: 20 }
+  var margin = { left: 90, top: 30, right: 30, bottom: 20 },
+    parallelContainer = document.getElementById("parallel-container"),
+    para_width = parallelContainer.offsetWidth -20,
+    para_height = parallelContainer.offsetHeight - 10;
+  
 
   const dimensions =  ['new_genre', 'danceability', 'liveness', 'tempo', 'energy', 'valence', 'popularity', 'speechiness_norm', 'acousticness'];
 

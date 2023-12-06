@@ -269,3 +269,32 @@ body {
     width: 100%;
     height: 100%;
   }
+
+#tsne-container {
+    width: 100%;
+    height: 350px;
+    position: relative;
+  }
+  
+#tsne {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+
+
+#parallel-container {
+    width: 100%;
+    height: 430px;
+  }
+
+#parallel {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+

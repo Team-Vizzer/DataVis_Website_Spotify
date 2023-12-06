@@ -4,38 +4,40 @@ Welcome to the Spotify Music Trend Visualization project by Group 7. This intera
 #Getting Started
 To explore our visualizations, you have a couple of options:
 
-# Local Setup
-Clone the repository to your local machine.
-Navigate to the production folder.
-Open index.html in your browser. For a better experience, we recommend setting up a live server.
+Local Setup
+1. Clone the repository to your local machine.
+2. Navigate to the production folder.
+3. Open index.html in your browser. For a better experience, we recommend setting up a live server.
+
 Using Live Server in VSCode
-If you're using Visual Studio Code as your IDE, you can install the Live Server extension.
-Once installed, simply right-click on the index.html file and select Open with Live Server, or click the "Go Live" button in the bottom-right corner of the VSCode window.
+- If you're using Visual Studio Code as your IDE, you can install the Live Server extension.
+- Once installed, simply right-click on the index.html file and select Open with Live Server, or click the "Go Live" button in the bottom-right corner of the VSCode window.
 
 # Online Access
 Prefer to view it online? Visit our deployed website at:
 
-# Spotify Music Trend Visualization
+[Spotify Music Trend Visualization](data-vis-website-spotify-group7-git-master-graceqx.vercel.app/.)
 
-Features
-Interactive geographic music trending maps.
-Bubble map representations with a dynamic time slider.
-Detailed radar charts for genre characteristics.
-Video Demonstration
+# Features
+- Interactive geographic music trending maps.
+- Bubble map representations with a dynamic time slider.
+- Detailed radar charts for genre characteristics.
+  
+# Video Demonstration
 For a guided tour of our project, watch our demonstration video on YouTube:
 
-Spotify Music Trend Visualization - Group 7
+[Spotify Music Trend Visualization - Group 7]( https://www.youtube.com/watch?v=7BOe2QI6T-I)
 
-Contributing
+# Contributing
 We welcome contributions and suggestions! Please fork the repository and create a new branch for your contributions. Feel free to submit a pull request.
 
-Feedback
+# Feedback
 Have feedback or suggestions? Please open an issue in this repository, and we'll get back to you as soon as possible.
 
-License
+# License
 This project is licensed under the MIT License - see the LICENSE.md file for details.
 
-Acknowledgments
+# Acknowledgments
 Spotify for providing the dataset.
 Hugging Face for the music track dataset.
 All Group 7 members for their hard work and dedication.

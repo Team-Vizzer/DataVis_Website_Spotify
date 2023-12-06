@@ -1,3 +1,41 @@
 # DataVis_Website_Spotify_Group7
-This is the data visualization website for Spotify Music Trend. You can access the index.html in the production folder. You can install the live server on VSCode and click "go live" on the right bottom corner.
-Or, you can direct go to our deployed url: data-vis-website-spotify-group7-git-master-graceqx.vercel.app/
+Welcome to the Spotify Music Trend Visualization project by Group 7. This interactive website is designed to showcase the latest trends in the world of music, as captured by Spotify's rich datasets.
+
+#Getting Started
+To explore our visualizations, you have a couple of options:
+
+# Local Setup
+Clone the repository to your local machine.
+Navigate to the production folder.
+Open index.html in your browser. For a better experience, we recommend setting up a live server.
+Using Live Server in VSCode
+If you're using Visual Studio Code as your IDE, you can install the Live Server extension.
+Once installed, simply right-click on the index.html file and select Open with Live Server, or click the "Go Live" button in the bottom-right corner of the VSCode window.
+
+# Online Access
+Prefer to view it online? Visit our deployed website at:
+
+# Spotify Music Trend Visualization
+
+Features
+Interactive geographic music trending maps.
+Bubble map representations with a dynamic time slider.
+Detailed radar charts for genre characteristics.
+Video Demonstration
+For a guided tour of our project, watch our demonstration video on YouTube:
+
+Spotify Music Trend Visualization - Group 7
+
+Contributing
+We welcome contributions and suggestions! Please fork the repository and create a new branch for your contributions. Feel free to submit a pull request.
+
+Feedback
+Have feedback or suggestions? Please open an issue in this repository, and we'll get back to you as soon as possible.
+
+License
+This project is licensed under the MIT License - see the LICENSE.md file for details.
+
+Acknowledgments
+Spotify for providing the dataset.
+Hugging Face for the music track dataset.
+All Group 7 members for their hard work and dedication.

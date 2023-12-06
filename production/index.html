@@ -88,7 +88,7 @@
           <!-- /sidebar menu -->
 
           <!-- /menu footer buttons -->
-          <div class="sidebar-footer hidden-small">
+          <!-- <div class="sidebar-footer hidden-small">
             <a data-toggle="tooltip" data-placement="top" title="Settings">
               <span class="glyphicon glyphicon-cog" aria-hidden="true"></span>
             </a>
@@ -101,7 +101,7 @@
             <a data-toggle="tooltip" data-placement="top" title="Logout" href="login.html">
               <span class="glyphicon glyphicon-off" aria-hidden="true"></span>
             </a>
-          </div>
+          </div> -->
           <!-- /menu footer buttons -->
         </div>
       </div>
@@ -148,23 +148,27 @@
 
           <div class="row">
             <!-- Parallel Graph -->
-            <div class="col-md-7 col-sm-7  ">
+            <div class="col-md-7 col-sm-7">
               <div class="x_panel">
                 <div class="x_title">
                   <h2>Music Evolution</h2>
                   <div class="clearfix"></div>
                 </div>
                 <div class="x_content">
-                  <svg id="area" width="900" height="350"></svg>
+                  <!-- <svg id="area" width="900" height="350"></svg> -->
+                  <!-- <svg id="area" width="900" height="350"></svg> -->
+                  <div id="area-container" style="width: 70%; height:350px;">
+                    <svg id="area"></svg>
+                  </div>
                 </div>
               </div>
             </div>
 
             <!-- t-sne chart-->
-            <div class="col-md-5 col-sm-5  ">
+            <div class="col-md-5 col-sm-5">
               <div class="x_panel">
                 <div class="x_title">
-                  <h2>T-sne Graph</h2>
+                  <h2>Genre Clusters</h2>
                   <div class="clearfix"></div>
                 </div>
                 <div class="x_content">
@@ -175,35 +179,10 @@
               </div>
             </div>
 
-            <!-- <div class="row">
-              <div class="col-md-12 col-sm-12 ">
-                  <div class="dashboard_graph">
-                  <div class="row x_title">
-                      <div class="col-md-12">
-                      <h2> Area Graph</h2>
-                      </div>
-                      <div class="col-md-12">
-                      <div id="reportrange" class="pull-right" style="background: #ffffff00; cursor: pointer; padding: 5px 10px; border: 1px solid #cccccc00">
-                      <div class="x_content">
-                          <svg id="tsne" width="500" height="300"></svg>
-                        <svg id="tsne" width="500" height="300"></svg>
-                      </div>
-                          <i class="glyphicon glyphicon-calendar fa fa-calendar"></i> 
-                          <span>December 30, 2014 - January 28, 2015</span> <b class="caret"></b> 
-
-                  </div>
-  
-                  <div class="col-md-12 col-sm-12 ">
-                    <svg id="area" width="1570" height="300"></svg>
-                  </div>
-  
-                  <div class="clearfix"></div>
-                  </div>
-            </div> -->
 
             <div class="row">
               <!-- area graph -->
-              <div class="col-md-12 col-sm-12">
+              <div class="col-md-12 col-sm-12 col-lg-12">
                 <div class="x_panel">
                   <div class="x_title">
                     <h2>Genre Descriptors</h2>
@@ -221,12 +200,12 @@
         <!-- /page content -->
 
         <!-- footer content -->
-        <!-- <footer>
+        <footer>
           <div class="pull-right">
             COMP 4462 Group 7
           </div>
           <div class="clearfix"></div>
-        </footer> -->
+        </footer>
         <!-- /footer content -->
       </div>
     </div>

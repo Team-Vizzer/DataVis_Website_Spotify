@@ -1,18 +1,30 @@
 
 // set the dimensions and margins of the graph
-var margin_area = {top: 20, right: 40, bottom: 0, left: 30},
+var margin_area = {top: 20, right: 40, bottom: 0, left: 30};
     // width_area = 1510 - margin_area.left - margin_area.right,
-    width_area = 900 - margin_area.left - margin_area.right,
-    height_area = 350 - margin_area.top - margin_area.bottom;
+    // width_area = 900 - margin_area.left - margin_area.right,
+    // height_area = 350 - margin_area.top - margin_area.bottom;
+
+var areaContainer = document.getElementById("area-container");
+var width_area = areaContainer.clientWidth - margin_area.left - margin_area.right;
+var height_area = areaContainer.clientHeight - margin_area.top - margin_area.bottom;
+
+console.log("area info", areaContainer ,width_area, height_area);
+// var containerWidth = document.getElementById("area").offsetWidth;
+// var containerHeight = document.getElementById("area").offsetHeight;
+
+// var width_area = containerWidth - margin_area.left - margin_area.right;
+// var height_area = containerHeight - margin_area.top - margin_area.bottom;
 
 // append the svg object to the body of the page
 var svgArea = d3.select("#area")
   .append("svg")
-    .attr("width", width_area + margin_area.left + margin_area.right)
-    .attr("height", height_area + margin_area.top + margin_area.bottom)
+    .attr("width", width_area)
+    .attr("height", height_area)
   .append("g")
     .attr("transform",
           "translate(" + margin_area.left + "," + margin_area.top + ")");
+
 
 // Parse the Data
 d3.csv("2.csv").then(function(data) {

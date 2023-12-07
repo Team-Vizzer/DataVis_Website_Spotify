@@ -17,7 +17,7 @@ Using Live Server in VSCode
 # Online Access
 Prefer to view it online? Visit our deployed website at:
 
-[Spotify Music Trend Visualization](data-vis-website-spotify-group7-git-master-graceqx.vercel.app/.)
+[Spotify Music Trend Visualization](https://data-vis-website-spotify-group7.vercel.app)
 
 # Features
 - Interactive geographic music trending maps.
